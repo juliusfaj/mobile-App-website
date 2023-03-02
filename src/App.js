@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./components/banner";
 import Features from "./components/features";
 import Slider from "./components/slider";
+import Preview from "./components/preview";
 
 import { useGlobalContext } from "./context";
 
@@ -13,6 +14,7 @@ const App = () => {
       <Banner />
       <Slider />
       <Features />
+      <Preview />
     </section>
   );
 };
