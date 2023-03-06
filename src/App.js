@@ -3,6 +3,7 @@ import Banner from "./components/banner";
 import Features from "./components/features";
 import Slider from "./components/slider";
 import Preview from "./components/preview";
+import Help from "./components/help";
 
 import { useGlobalContext } from "./context";
 
@@ -15,6 +16,7 @@ const App = () => {
       <Slider />
       <Features />
       <Preview />
+      <Help />
     </section>
   );
 };

@@ -28,10 +28,16 @@
   background: url("./images/download-background.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  position: relative;
+  /* background-attachment: scroll; */
+  /* background-repeat: no-repeat; */
+  /* position: relative; */
 }
+
+/* @media screen and (min-width: 767px) {
+  .banner {
+    min-height: 120vh;
+  }
+} */
 
 /* nav */
 .nav {
@@ -240,7 +246,7 @@
 }
 
 .desc-container .desc {
-  font-size: 2.3rem;
+  font-size: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -257,19 +263,28 @@
 .description {
   margin: 1.7rem auto;
   color: white;
-  font-size: 1.03rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* font-weight: bold; */
   text-align: center;
   /* width: 90%;
   max-width: 92%; */
-  max-width: 30rem;
+  max-width: 28rem;
+}
+
+.btn-container {
   /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
 .btn-container button {
-  padding: 1.2rem 3rem;
+  /* padding: 1.2rem 10%; */
+  width: 35%;
+  height: 3.3rem;
   border-radius: 10rem;
   font-size: 0.9rem;
   text-transform: capitalize;
@@ -325,6 +340,9 @@
     margin: 1.7rem 0;
     text-align: left;
     max-width: 25rem;
+  }
+  .btn-container {
+    justify-content: left;
   }
   .btn-container button {
     margin-left: 0;
@@ -569,6 +587,7 @@
 
 .feature-img-container img {
   max-width: 20rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 767px) {
@@ -637,6 +656,7 @@
     margin-bottom: 3rem;
   }
   .feature-img-container {
+    /* border: 1px solid red; */
     height: 35rem;
     width: 22rem;
   }
@@ -652,13 +672,14 @@
   background: url("./images/header-background.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 90vh;
+  /* min-height: 90vh; */
+  /* max-height: 100vh; */
   padding: 7rem 0 4rem 0;
   /* width: 100vw; */
+  /* border: 1px solid red; */
 }
 
 .preview-video-container {
-  /* border: 1px solid red; */
   max-width: 35rem;
   position: relative;
   display: flex;
@@ -679,7 +700,7 @@
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 992px) {
   .preview-video-container {
     max-width: 58rem;
     min-height: 30rem;
@@ -732,5 +753,115 @@
     opacity: 0;
   }
 }
+/* end */
 
+/* help section */
+.help-section {
+  background: var(--nav-color);
+  padding: 7.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help-section-item {
+  /* border: var(--testing-border); */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 31rem;
+  margin: 0 auto;
+}
+
+.help-img-container {
+  /* border: 1px solid blue; */
+  margin: 3rem 0;
+  max-width: 28rem;
+}
+
+.help-img-container img {
+  width: 100%;
+}
+
+.help-desc-container {
+  /* border: 1px solid pink; */
+  /* margin: 0 auto; */
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.help-desc-container h4 {
+  font-size: 2rem;
+}
+
+.help-desc-container p {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.05rem;
+}
+
+.help-desc-container button {
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  text-transform: capitalize;
+  color: var(--text-color);
+  background: var(--button-color);
+  cursor: pointer;
+  border: 1px solid var(--button-color);
+  font-weight: bold;
+  transition: all 0.1s linear;
+}
+.help-desc-container button:hover {
+  background: none;
+  color: var(--button-color);
+}
+
+.inverse {
+  flex-direction: column-reverse;
+  margin-top: 7rem;
+}
+
+@media screen and (min-width: 767px) {
+  .help-section-item {
+    align-items: flex-start;
+    max-width: 45rem;
+  }
+  .help-desc-container {
+    width: 96%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .help-section-item {
+    max-width: 60rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .help-img-container {
+    max-width: 35rem;
+    margin: 0;
+  }
+
+  .help-desc-container {
+    width: 48%;
+    margin-top: 4rem;
+  }
+
+  .inverse {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .help-section-item {
+    max-width: 65rem;
+  }
+
+  .help-desc-container h4 {
+    /* border: 1px solid red; */
+    width: 65%;
+  }
+}
 /* end */
