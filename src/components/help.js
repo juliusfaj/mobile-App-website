@@ -2,8 +2,11 @@ import React from "react";
 import { useState } from "react";
 import firstDetails from "../images/details-1.png";
 import secondDetails from "../images/details-2.png";
+import { useGlobalContext } from "../context";
 
 const Help = () => {
+  const { openModal } = useGlobalContext();
+
   return (
     <div className="help-section">
       <div className="help-section-item">
@@ -17,7 +20,7 @@ const Help = () => {
             augue, blandit in varius gravida tempor a massa. Curabitur ante
             dolor euismod a arcu nec pellentque
           </p>
-          <button>modal</button>
+          <button onClick={openModal}>modal</button>
         </div>
       </div>
 

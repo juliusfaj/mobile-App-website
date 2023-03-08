@@ -4,6 +4,7 @@ import Features from "./components/features";
 import Slider from "./components/slider";
 import Preview from "./components/preview";
 import Help from "./components/help";
+import Modal from "./components/modal";
 
 import { useGlobalContext } from "./context";
 
@@ -12,6 +13,7 @@ const App = () => {
 
   return (
     <section className="body">
+      <Modal />
       <Banner />
       <Slider />
       <Features />

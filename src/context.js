@@ -18,6 +18,8 @@ const AppProvider = ({ children }) => {
   const [monitoringOrder, setMonitoringOrder] = useState(3);
   const [imgIndex, setImgIndex] = useState(0);
 
+  const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
     const interval = setInterval(() => {
       // setNum(num + 1);
@@ -92,6 +94,13 @@ const AppProvider = ({ children }) => {
     setImgIndex(2);
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+  };
+  const openModal = () => {
+    setShowModal(true);
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -118,6 +127,10 @@ const AppProvider = ({ children }) => {
         configuringFun,
         trackingFun,
         monitoringFun,
+
+        closeModal,
+        showModal,
+        openModal,
       }}
     >
       {children}

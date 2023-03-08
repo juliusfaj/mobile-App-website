@@ -7,6 +7,7 @@ import {
   FaBook,
   FaParachuteBox,
   FaCube,
+  FaArrowRight,
 } from "react-icons/fa";
 
 import firstImg from "../images/testimonial-1.jpg";
@@ -104,3 +105,11 @@ export const monitoringData = [
 ];
 
 export const featuresImg = [firstScreenshot, thirdScreenshot, fifthScreenshot];
+
+export const modalData = [
+  "Tincidunt sem vel brita bet mala",
+  "Sapien condimentum sacoz sil necr",
+  "Fusce interdum nec ravon fro urna",
+  "Integer pulvinar biolot bat tortor",
+  "Id ultricies fringilla fangor raq trinit",
+];
