@@ -8,6 +8,10 @@ import {
   FaParachuteBox,
   FaCube,
   FaArrowRight,
+  FaUsers,
+  FaCog,
+  FaComments,
+  FaRocket,
 } from "react-icons/fa";
 
 import firstImg from "../images/testimonial-1.jpg";
@@ -112,4 +116,12 @@ export const modalData = [
   "Fusce interdum nec ravon fro urna",
   "Integer pulvinar biolot bat tortor",
   "Id ultricies fringilla fangor raq trinit",
+];
+
+export const countUpData = [
+  { icon: <FaUsers />, end: 231, name: "happy costomers" },
+  { icon: <FaCode />, end: 385, name: "issues solved" },
+  { icon: <FaCog />, end: 159, name: "good reviews" },
+  { icon: <FaRocket />, end: 128, name: "case studies" },
+  { icon: <FaComments />, end: 216, name: "press article" },
 ];

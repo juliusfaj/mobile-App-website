@@ -1013,6 +1013,57 @@
   color: var(--button-color);
 }
 
+.counting {
+  /* border: 1px solid red; */
+  max-width: 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.counting div {
+  color: var(--text-color);
+  /* border: 1px solid blue; */
+  /* width: 50%; */
+  padding: 0 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.counting div svg {
+  font-size: 2.7rem;
+  color: var(--button-color);
+}
+
+.counting div .count {
+  margin: 0.5rem 0;
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+.counting div .name {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 767px) {
+  .counting {
+    margin-top: 9rem;
+    max-width: 47rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .counting {
+    max-width: 80rem;
+  }
+  .counting div {
+    padding: 0 4rem;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 80rem;

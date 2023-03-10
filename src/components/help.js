@@ -1,7 +1,9 @@
 import React from "react";
+import CountUp from "react-countup";
 import { useState } from "react";
 import firstDetails from "../images/details-1.png";
 import secondDetails from "../images/details-2.png";
+import { countUpData } from "./data";
 import { useGlobalContext } from "../context";
 
 const Help = () => {
@@ -40,6 +42,21 @@ const Help = () => {
         </div>
       </div>
       {/* end */}
+
+      <div className="counting">
+        {countUpData.map((item, index) => {
+          const { icon, name, end } = item;
+          return (
+            <div key={index}>
+              {icon}
+              <p className="count">
+                <CountUp end={end} duration={2} />
+              </p>
+              <p className="name">{name}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
