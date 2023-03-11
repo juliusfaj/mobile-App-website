@@ -50,7 +50,13 @@ const Help = () => {
             <div key={index}>
               {icon}
               <p className="count">
-                <CountUp end={end} duration={2} />
+                <CountUp
+                  end={end}
+                  duration={4}
+                  enableScrollSpy={true}
+                  scrollSpyOnce={true}
+                  scrollSpyDelay={500}
+                />
               </p>
               <p className="name">{name}</p>
             </div>

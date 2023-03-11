@@ -22,8 +22,15 @@ import fifthImg from "../images/testimonial-5.jpg";
 import sixthImg from "../images/testimonial-6.jpg";
 
 import firstScreenshot from "../images/screenshot-1.png";
+import secondScreenshot from "../images/screenshot-2.png";
 import thirdScreenshot from "../images/screenshot-3.png";
+import forthScreenshot from "../images/screenshot-4.png";
 import fifthScreenshot from "../images/screenshot-5.png";
+import sixthScreenshot from "../images/screenshot-6.png";
+import seventhScreenshot from "../images/screenshot-7.png";
+import eighthScreenshot from "../images/screenshot-8.png";
+import ninethScreenshot from "../images/screenshot-9.png";
+import tenthScreenshot from "../images/screenshot-10.png";
 
 export const nameData = ["developer", "designers", "marketers"];
 
@@ -124,4 +131,17 @@ export const countUpData = [
   { icon: <FaCog />, end: 159, name: "good reviews" },
   { icon: <FaRocket />, end: 128, name: "case studies" },
   { icon: <FaComments />, end: 216, name: "press article" },
+];
+
+export const carosuelData = [
+  firstScreenshot,
+  secondScreenshot,
+  thirdScreenshot,
+  forthScreenshot,
+  fifthScreenshot,
+  sixthScreenshot,
+  seventhScreenshot,
+  eighthScreenshot,
+  ninethScreenshot,
+  tenthScreenshot,
 ];

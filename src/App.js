@@ -5,7 +5,7 @@ import Slider from "./components/slider";
 import Preview from "./components/preview";
 import Help from "./components/help";
 import Modal from "./components/modal";
-
+import Carosuels from "./components/carosuel";
 import { useGlobalContext } from "./context";
 
 const App = () => {
@@ -19,6 +19,7 @@ const App = () => {
       <Features />
       <Preview />
       <Help />
+      {/* <Carosuels /> */}
     </section>
   );
 };
