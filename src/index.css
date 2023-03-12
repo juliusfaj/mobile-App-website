@@ -1110,7 +1110,7 @@
 
 .download-section .download-desc {
   /* border: 1px solid blue; */
-  max-width: 45rem;
+  width: 100%;
   margin: 0 auto 4.5rem auto;
   text-align: center;
 }
