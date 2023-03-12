@@ -1158,6 +1158,7 @@
   .download-section .download-desc .btn-container {
     display: flex;
     justify-content: center;
+    width: 30rem;
   }
 }
 
