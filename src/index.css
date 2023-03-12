@@ -1110,7 +1110,7 @@
 
 .download-section .download-desc {
   /* border: 1px solid blue; */
-  max-width: 45rem;
+  /* max-width: 45rem; */
   margin: 0 auto 4.5rem auto;
   text-align: center;
 }
@@ -1155,6 +1155,10 @@
   .download-img {
     max-width: 40rem;
   }
+  .download-section .download-desc .btn-container {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1120px) {
@@ -1171,11 +1175,6 @@
 
   .download-section .download-desc p {
     max-width: 33rem;
-  }
-
-  .download-section .download-desc .btn-container {
-    display: flex;
-    justify-content: center;
   }
 
   .download-img {
