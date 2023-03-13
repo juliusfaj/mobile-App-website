@@ -1129,8 +1129,7 @@
 }
 
 .download-section .download-desc .btn-container {
-  width: 30rem;
-
+  max-width: 30rem;
   margin: 0 auto;
 }
 
