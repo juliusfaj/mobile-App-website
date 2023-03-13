@@ -20,6 +20,8 @@ const AppProvider = ({ children }) => {
 
   const [showModal, setShowModal] = useState(false);
 
+  const currentYear = new Date().getFullYear();
+
   useEffect(() => {
     const interval = setInterval(() => {
       // setNum(num + 1);
@@ -131,6 +133,8 @@ const AppProvider = ({ children }) => {
         closeModal,
         showModal,
         openModal,
+
+        currentYear,
       }}
     >
       {children}

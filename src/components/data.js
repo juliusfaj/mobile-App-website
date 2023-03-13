@@ -12,6 +12,10 @@ import {
   FaCog,
   FaComments,
   FaRocket,
+  FaFacebookF,
+  FaTwitter,
+  FaWhatsapp,
+  FaInstagram,
 } from "react-icons/fa";
 
 import firstImg from "../images/testimonial-1.jpg";
@@ -144,4 +148,11 @@ export const carosuelData = [
   eighthScreenshot,
   ninethScreenshot,
   tenthScreenshot,
+];
+
+export const footerIcons = [
+  <FaFacebookF />,
+  <FaTwitter />,
+  <FaWhatsapp />,
+  <FaInstagram />,
 ];

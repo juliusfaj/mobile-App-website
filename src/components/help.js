@@ -55,7 +55,7 @@ const Help = () => {
                   duration={4}
                   enableScrollSpy={true}
                   scrollSpyOnce={true}
-                  scrollSpyDelay={500}
+                  scrollSpyDelay={200}
                 />
               </p>
               <p className="name">{name}</p>

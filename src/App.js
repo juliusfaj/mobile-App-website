@@ -7,6 +7,7 @@ import Help from "./components/help";
 import Modal from "./components/modal";
 import Carosuels from "./components/carosuel";
 import Download from "./components/download";
+import Footer from "./components/footer";
 import { useGlobalContext } from "./context";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       <Help />
       {/* <Carosuels /> */}
       <Download />
+      <Footer />
     </section>
   );
 };
