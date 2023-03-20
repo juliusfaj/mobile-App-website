@@ -30,7 +30,7 @@
 
 /* banner section */
 .banner {
-  min-height: 75rem;
+  min-height: 70rem;
   /* border: var(--testing-border); */
   background: url("./images/download-background.jpg");
   background-size: cover;
@@ -40,11 +40,11 @@
   /* position: relative; */
 }
 
-/* @media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) {
   .banner {
-    min-height: 120vh;
+    min-height: 75rem;
   }
-} */
+}
 
 /* nav */
 .nav {
